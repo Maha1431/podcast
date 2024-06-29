@@ -29,15 +29,10 @@ mongoose.connect(mongoURI).then(() => {
   console.error("Error connecting to MongoDB:", err);
 });
 
-app.get("/", (req, res) => {
-  return res.json({ message: "Here is your data" });
-});
 
 app.use("/user", UserRoutes);
 app.use("/project", verifyUserAuthentication, ProjectRoutes);
 app.use("/project/:projectId/episode", verifyUserAuthentication, EpisodeRoutes);
 
-app.use((req, res) => {
-  res.status(404).json({ message: "Route Not Found" });
-});
+
 
