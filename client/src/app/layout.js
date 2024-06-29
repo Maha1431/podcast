@@ -2,8 +2,8 @@
 
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { AuthProvider } from "@/contexts/userAuth";
-import CheckAuth from "@/components/checkAuth";
+import { AuthProvider } from "../contexts/userAuth";
+import CheckAuth from "../Components/checkAuth";
 import { Provider } from "react-redux";
 import store from "@/store/store";
 

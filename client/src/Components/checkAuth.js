@@ -1,6 +1,6 @@
 "use client";
 
-import { useAuth } from "@/contexts/userAuth";
+import { useAuth } from "../contexts/userAuth";
 import { useEffect } from "react";
 
 function CheckAuth({ children }) {

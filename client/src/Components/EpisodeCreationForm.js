@@ -2,7 +2,7 @@ import {
   addEpisode,
   createEpisode,
   setIsLoading,
-} from "@/store/slices/project";
+} from "../store/slices/project";
 import { X } from "lucide-react";
 import { useParams } from "next/navigation";
 import { useState } from "react";

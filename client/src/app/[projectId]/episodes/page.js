@@ -1,8 +1,8 @@
 "use client";
 
-import EpisodeCreationForm from "@/components/EpisodeCreationForm";
-import Card from "@/components/ui/Card";
-import CardsLayout from "@/components/ui/CardsLayout";
+import EpisodeCreationForm from "../../../Components/EpisodeCreationForm";
+import Card from "../../../Components/ui/Card";
+import CardsLayout from "../../../Components/ui/CardsLayout";
 import LoadingSpinner from "@/components/ui/LoadingSpinner";
 import Modal from "@/components/ui/Modal";
 import {
