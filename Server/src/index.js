@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
 // MongoDB connection URL
-const mongoURI = 'mongodb+srv://mmahaece07:Maha1431@cluster0.iei1qfm.mongodb.net/Podcast';
+const mongoURI = process.env.MONGODB_URI;
 console.log("MongoDB URI:", mongoURI);
 
 // Connect to MongoDB using mongoose
